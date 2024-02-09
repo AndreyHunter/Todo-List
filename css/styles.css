@@ -76,6 +76,9 @@ body {
 }
 
 .todo__list {
+    max-height: 400px; 
+    overflow-y: auto;
+    padding-right: 10px;
     margin-bottom: 50px;
 }
 
@@ -170,7 +173,7 @@ body {
 @media (max-width: 645px) {
 
     .todo__body {
-        width: 90%;
+        width: 80%;
     }
 
     .todo__title {
@@ -199,5 +202,17 @@ body {
 
     .todo__addButton {
         padding: 10px 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .todo__emptyList {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .todo__emptyList {
+        font-size: 1.3rem;
     }
 }
