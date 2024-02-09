@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-app</title>
+    <link rel="shortcut icon" href="./images/checklist.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <section class="todo">
+            <div class="todo__title-wrapper">
+                <h1 class="todo__title">Todo List</h1>
+                <img src="./images/check-list.png" alt="check-list-icon" class="todo__icon">
+            </div>
+
+
+            <div class="todo__body">
+                <ul id="todoList" class="todo__list">
+                </ul>
+    
+                <form id="todoForm" class="todo__form">
+                    <input id="todoInput" type="text" class="todo__input" placeholder="your text" maxlength="70">
+                    <button class="todo__addButton">Add task</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

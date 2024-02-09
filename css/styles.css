@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Protest Strike', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526);
+}
+
+.container {
+    max-width: 1170px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+.todo {
+    max-width: 800px;
+    margin: 100px auto 0;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.todo__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.todo__title {
+    font-size: 3rem;
+}
+
+.todo__icon {
+    width: 100px;
+}
+
+.todo__emptyList {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.none {
+    display: none;
+}
+
+.todo__body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.todo__list {
+    margin-bottom: 50px;
+}
+
+.todo__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.todo__text {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.250rem;
+    font-weight: 800;
+}
+
+.todo__text-done {
+    text-decoration: line-through;
+    color: #414345;
+}
+
+.todo__buttons-wrapper  {
+    display: flex;
+    gap: 15px;
+}
+
+.todo__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    width: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 10px;
+    transition: .1s ease-in-out;
+}
+
+.todo__button:hover {
+    background-color: rgba(200, 222, 241, 0.466);
+}
+
+.todo__button-image {
+    width: 28px;
+    pointer-events: none;
+}
+
+#cross {
+    width: 40px;
+}
+
+.todo__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.todo__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(75, 64, 64);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.todo__addButton {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #c0dcf7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.todo__addButton:hover {
+    background-color: #a7c5e0;
+}
+
+@media (max-width: 968px) {
+    .todo__text {
+        font-size: clamp(1rem, 2vw, 1.125rem);
+    }
+}
+
+@media (max-width: 645px) {
+
+    .todo__body {
+        width: 90%;
+    }
+
+    .todo__title {
+        font-size: 2.4rem;
+    }
+
+    .todo__icon {
+        width: 80px;
+    }
+
+    .todo__text {
+        font-size: .9rem;
+    }
+
+    .todo__buttons-wrapper {
+        gap: 10px;
+    }
+
+    .todo__button {
+        width: 30px;
+    }
+
+    .todo__input {
+        padding: 7px;
+    }
+
+    .todo__addButton {
+        padding: 10px 30px;
+    }
+}
