@@ -122,7 +122,7 @@ body {
 }
 
 .todo__button:hover {
-    background-color: #94f731;
+    background-color: rgb(212, 220, 226);
 }
 
 .todo__button-image {
