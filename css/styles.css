@@ -121,8 +121,12 @@ body {
     transition: .1s ease-in-out;
 }
 
+.todo__button:hover {
+    filter: brightness(95%);
+}
+
 .buttonColor {
-    background-color: #94f731;
+    background-color: #a8eb65a8;
 }
 
 .todo__button-image {
