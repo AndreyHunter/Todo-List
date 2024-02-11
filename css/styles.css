@@ -121,8 +121,8 @@ body {
     transition: .1s ease-in-out;
 }
 
-.todo__button:hover {
-    background-color: rgb(212, 220, 226);
+.buttonColor {
+    background-color: #94f731;
 }
 
 .todo__button-image {

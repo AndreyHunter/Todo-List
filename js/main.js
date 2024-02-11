@@ -69,7 +69,7 @@ function doneTask(event) {
     saveToLocalStorage()
     const todoText = parentEl.querySelector('.todo__text');
     todoText.classList.toggle('todo__text-done');
-    event.target.style.background = '#94f731';
+    event.target.classList.toggle('buttonColor');
 }
 
 function generateHTML(data, index) {
