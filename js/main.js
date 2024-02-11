@@ -3,6 +3,7 @@ const todoList = document.querySelector('#todoList');
 const todoInput = document.querySelector('#todoInput');
 const todoEmpty = document.querySelector('.todo__emptyList');
 
+
 let todoArray = [];
 
 todoForm.addEventListener('submit', addTask);
@@ -68,6 +69,7 @@ function doneTask(event) {
     saveToLocalStorage()
     const todoText = parentEl.querySelector('.todo__text');
     todoText.classList.toggle('todo__text-done');
+    event.target.style.background = '#94f731';
 }
 
 function generateHTML(data, index) {
